@@ -1,14 +1,14 @@
+PImage IMGPinchos;
+
 class Pinchos {
-  FPoly pinchos = new FPoly ();
+  FBox pinchos = new FBox(100, 30);
   Pinchos() {
-
-    pinchos.vertex(100, 800);
-    pinchos.vertex(120, 700);
-    pinchos.vertex(140, 800);
-
-    pinchos.setNoStroke();
+    IMGPinchos = loadImage("IMGPinchos.png");
     pinchos.setStatic(true);
+    pinchos.setPosition(random(100,1000), 710);
+    pinchos.setGrabbable(false);
     pinchos.setName("pinchos");
+    pinchos.attachImage(IMGPinchos);
   }
 
   void dibujar() {

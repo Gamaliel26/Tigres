@@ -4,7 +4,8 @@ class Pelota {
   FCircle circulo = new FCircle(50);
   Pelota() {
     IMGpelota = loadImage("IMGpelota.png");
-
+    
+    circulo.setGravity();
     circulo.setStatic(false);
     // Ubico el circulo
     circulo.setPosition(500, 100);

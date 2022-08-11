@@ -37,7 +37,7 @@ void draw() {
 void keyPressed() {
   FBox plataforma = new FBox(120, 10);
   plataforma.setPosition(mouseX, mouseY);
-  plataforma.setGrabbable(false);
+  plataforma.setGrabbable(true);
   plataforma.setStatic(true);
   plataforma.setFill(0);
   mundo.add(plataforma);

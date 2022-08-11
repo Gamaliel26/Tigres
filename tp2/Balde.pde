@@ -1,11 +1,11 @@
 PImage IMGBalde;
 
 class Balde {
-  FBox balde = new FBox(100, 120);
+  FBox balde = new FBox(100, 130);
   Balde() {
     IMGBalde = loadImage("IMGBalde.png");
 
-    balde.setStatic(false);
+    balde.setStatic(true);
     // Ubico el circulo
     balde.setPosition(random(100,1000), 710);
 
@@ -13,7 +13,7 @@ class Balde {
     // Configuro el rebote 
     balde.setRestitution(0.1);
     // Configuro agarrabilidad
-    balde.setGrabbable(true);
+    balde.setGrabbable(false);
     balde.setName("Balde");
     balde.attachImage(IMGBalde);
   }
